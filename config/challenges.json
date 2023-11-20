@@ -39,7 +39,7 @@
   {
     "name": "batman",
     "description": "Write a function without any arguments. Have it return the string `'na'` repeated 10 times followed by the string `' batman!'`. Use the `repeat` function you used before to accomplish this.",
-    "assertions": [{ "input": null, "output": "nananananananananana batman" }]
+    "assertions": [{ "input": null, "output": "nananananananananana batman!" }]
   },
   {
     "name": "max",
