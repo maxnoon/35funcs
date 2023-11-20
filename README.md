@@ -26,7 +26,9 @@ Write a function with two `number` arguments. Have it return the smallest number
 ## ❌ 7: maxStr
 Write a function with two `string` arguments. Have it return the longest string.
 ### ⚠️ Errors:
-	- Function `maxStr` not found in index.js, did you export it?
+	- INPUT: aa,bb 
+	EXPECTED: aa
+	ACTUAL: bb
 
 ## ❌ 8: even
 Write a function with a single `number` argument. Return a boolean that indicated wether this number is even.
