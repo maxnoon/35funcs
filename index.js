@@ -1,4 +1,3 @@
-// Write your functions here, make sure to export them  test the workflow
 const double1 = (first) => first * 2;
 const double2 = (first, second) => first * 2;
 const double3 = (first, second) => (first > second ? first : second) * 2;
@@ -8,5 +7,6 @@ const max = (first, second) => Math.max(first, second);
 const maxDivide = (first , second)  => (Math.min(first, second)/Math.max(first, second));
 const maxStr = (first, second) => first.length >= second.length ? first : second;
 const even = (first) => first % 2 === 0;
-const evenBelow = (first) => Array.from({length:Math.floor(first/2)}, (_, i) => 2 * i);
-module.exports = { double1 ,double2,double3, repeat, batman , max, maxDivide, maxStr,even,evenBelow};
+const evenBelow = (first) => Array.from({length:Math.floor(first/2)}, (_, index) => 2 * index);
+const evenln = (first) => first.filter((num) => num % 2 === 0);
+module.exports = { double1 ,double2,double3, repeat, batman , max, maxDivide, maxStr,even,evenBelow,evenln};
