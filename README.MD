@@ -19,7 +19,9 @@ Write a function with two `number` arguments. Have it return the largest number 
 ## ❌ 6: maxDivide
 Write a function with two `number` arguments. Have it return the smallest number of the two divided by the largest number.
 ### ⚠️ Errors:
-	- Function `maxDivide` not found in index.js, did you export it?
+	- INPUT: -10,-50 
+	EXPECTED: 0.2
+	ACTUAL: 5
 
 ## ❌ 7: maxStr
 Write a function with two `string` arguments. Have it return the longest string.
