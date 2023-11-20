@@ -23,29 +23,23 @@ Write a function with two `number` arguments. Have it return the smallest number
 	EXPECTED: 0.2
 	ACTUAL: 5
 
-## ❌ 7: maxStr
+## ✅ 7: maxStr
 Write a function with two `string` arguments. Have it return the longest string.
-### ⚠️ Errors:
-	- INPUT: aa,bb 
-	EXPECTED: aa
-	ACTUAL: bb
 
-## ❌ 8: even
+## ✅ 8: even
 Write a function with a single `number` argument. Return a boolean that indicated wether this number is even.
 ### 🧠 Tips:
 > use the `%`(remainder) operator to determine if something is divisible by something else. Read about it [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder).
-### ⚠️ Errors:
-	- Function `even` not found in index.js, did you export it?
 
-## ❌ 9: evenBelow
+## ✅ 9: evenBelow
 Write a function with a single `number` argument. Return an array of all the numbers lower than this argument that are even.
-### ⚠️ Errors:
-	- Function `evenBelow` not found in index.js, did you export it?
 
 ## ❌ 10: evenIn
 Write a function with a single `array of numbers` argument. Return an array of all the numbers in this array that are even.
 ### ⚠️ Errors:
-	- Function `evenIn` not found in index.js, did you export it?
+	- INPUT: 1,3,4,6,8,10,33 
+	EXPECTED: 4
+	ACTUAL: 4,6,8,10
 
 ## ❌ 11: multiplyArray
 Write a function with a single `array of numbers` argument. Return the result of multiplying all the numbers. If the input contains just 1 number, return that number.
