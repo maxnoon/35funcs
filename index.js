@@ -3,30 +3,17 @@ const double1 = (first) => first * 2;
 
 const double2 = (first, second) => first * 2;
 
-const double3 = (first, second) => {
-  if (first > second) {
-    return first * 2;}
-  else {
-    return second * 2;}
-}
+const double3 = (first, second) => (first > second ? first : second) * 2;
 
-const repeat = (first, second) => {
-  let result = "";
-  if (second < 0) {
-    return result;
-  }
-  else{
-  for (let i = 0; i < second; i++) {
-    result += first;
+const repeat = (first, second) => first.repeat(second);
 
-    }
-  }
-  return result;
-}
 const batman = () =>  repeat("na", 10) + " batman!";
 
 const max = (first, second) => Math.max(first, second);
 
 const maxDivide = (first , second)  => (Math.min(first, second)/Math.max(first, second));
 
-module.exports = { double1 ,double2,double3, repeat, batman , max, maxDivide};
+const maxStr = (first, second) => first.length > second.length ? first : second;
+
+
+module.exports = { double1 ,double2,double3, repeat, batman , max, maxDivide, maxStr};
