@@ -8,5 +8,5 @@ const maxDivide = (first , second)  => (Math.min(first, second)/Math.max(first, 
 const maxStr = (first, second) => first.length >= second.length ? first : second;
 const even = (first) => first % 2 === 0;
 const evenBelow = (first) => Array.from({length:Math.floor(first/2)}, (_, index) => 2 * index);
-const evenln = (first) => first.filter((num) => num % 2 === 0);
-module.exports = { double1 ,double2,double3, repeat, batman , max, maxDivide, maxStr,even,evenBelow,evenln};
+const evenIn = (first) => first.filter((num) => num % 2 === 0);
+module.exports = { double1 ,double2,double3, repeat, batman , max, maxDivide, maxStr,even,evenBelow,evenIn};
