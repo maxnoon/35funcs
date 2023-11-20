@@ -7,4 +7,6 @@ const batman = () =>  repeat("na", 10) + " batman!";
 const max = (first, second) => Math.max(first, second);
 const maxDivide = (first , second)  => (Math.min(first, second)/Math.max(first, second));
 const maxStr = (first, second) => first.length >= second.length ? first : second;
-module.exports = { double1 ,double2,double3, repeat, batman , max, maxDivide, maxStr};
+const even = (first) => first % 2 === 0;
+const evenBelow = (first) => Array.from({length:Math.floor(first/2)}, (_, i) => 2 * i);
+module.exports = { double1 ,double2,double3, repeat, batman , max, maxDivide, maxStr,even,evenBelow};
