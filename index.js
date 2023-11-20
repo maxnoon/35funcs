@@ -5,7 +5,7 @@ const double2 = (first, second) => first * 2;
 
 const double3 = (first, second) => (first > second ? first : second) * 2;
 
-const repeat = (first, second) => first.repeat(second);
+const repeat = (first, second) => (Number.isInteger(second) && second > 0) ? first.repeat(second) : '';
 
 const batman = () =>  repeat("na", 10) + " batman!";
 
