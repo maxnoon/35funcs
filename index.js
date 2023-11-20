@@ -27,4 +27,6 @@ const batman = () =>  repeat("na", 10) + " batman!";
 
 const max = (first, second) => Math.max(first, second);
 
-module.exports = { double1 ,double2,double3, repeat, batman , max};
+const maxDivide = (first , second)  => (Math.min(first, second)/Math.max(first, second));
+
+module.exports = { double1 ,double2,double3, repeat, batman , max, maxDivide};
