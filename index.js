@@ -12,10 +12,10 @@ const maxStr = (first, second) =>
 const even = (first) => first % 2 === 0;
 const evenBelow = (first) =>
   Array.from({ length: Math.floor(first / 2) }, (x) => 2 * x);
-const evenIn = (array) => array.filter((number) => number % 2 === 0);
+const evenIn = (...array) => array.filter((number) => number % 2 === 0);
 const multiplyArray = (...array) =>
   array.reduce(accumulater, (currentValue) => accumulater * currentValue, 1);
-const divideArray = (array) =>
+const divideArray = (...array) =>
   array.reduce(accumulater, (currentValue) => accumulater / currentValue);
 module.exports = {
   double1,
