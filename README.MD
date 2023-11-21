@@ -31,8 +31,12 @@ Write a function with a single `number` argument. Return a boolean that indicate
 ### 🧠 Tips:
 > use the `%`(remainder) operator to determine if something is divisible by something else. Read about it [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder).
 
-## ✅ 9: evenBelow
+## ❌ 9: evenBelow
 Write a function with a single `number` argument. Return an array of all the numbers lower than this argument that are even.
+### ⚠️ Errors:
+	- INPUT: 12 
+	EXPECTED: 0,2,4,6,8,10
+	ACTUAL: (x, i) => 2 * i,(x, i) => 2 * i,(x, i) => 2 * i,(x, i) => 2 * i,(x, i) => 2 * i,(x, i) => 2 * i
 
 ## ✅ 10: evenIn
 Write a function with a single `array of numbers` argument. Return an array of all the numbers in this array that are even.
@@ -40,12 +44,25 @@ Write a function with a single `array of numbers` argument. Return an array of a
 ## ❌ 11: multiplyArray
 Write a function with a single `array of numbers` argument. Return the result of multiplying all the numbers. If the input contains just 1 number, return that number.
 ### ⚠️ Errors:
-	- Function `multiplyArray` not found in index.js, did you export it?
+	- INPUT: 8 
+	EXPECTED: 8
+	ACTUAL: 8
 
 ## ❌ 12: divideArray
 Write a function with a single `array of numbers` argument. Return the result of dividing the number from left to right. So the first number gets divided by the second and the result of that gets divided by the third (and so on..). If the array contains a zero, return zero. If the array contains just one number, return that number.
 ### ⚠️ Errors:
-	- Function `divideArray` not found in index.js, did you export it?
+	- INPUT: 0,2,4 
+	EXPECTED: 0
+	ACTUAL: Input is not an array
+	- INPUT: 16,8,2 
+	EXPECTED: 1
+	ACTUAL: Input is not an array
+	- INPUT: 16,-8,2 
+	EXPECTED: -1
+	ACTUAL: Input is not an array
+	- INPUT: 8 
+	EXPECTED: 8
+	ACTUAL: Input is not an array
 
 ## ❌ 13: splitCombine
 Write a function with two `string` arguments. Split both strings in halves and recombine the halves. Return the longest results of the two combinations (or the first one if both have the same length).
