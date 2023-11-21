@@ -11,12 +11,14 @@ const maxStr = (first, second) =>
   first.length >= second.length ? first : second;
 const even = (first) => first % 2 === 0;
 const evenBelow = (first) =>
-  Array.from({ length: Math.floor(first / 2) }, (x) => 2 * x);
+  Array.from({ length: Math.floor(first / 2) }, (x) => (x, i) => 2 * i);
 const evenIn = (...array) => array.filter((number) => number % 2 === 0);
 const multiplyArray = (...array) =>
-  array.reduce(accumulater, (currentValue) => accumulater * currentValue, 1);
-const divideArray = (...array) =>
-  array.reduce(accumulater, (currentValue) => accumulater / currentValue);
+  array.reduce((accumulator, currentValue) => accumulator * currentValue, 1);
+const divideArray = (array) =>
+  array.slice(1).includes(0)
+    ? 'Cannot divide by zero'
+    : array.reduce((acc, val) => acc / val);
 module.exports = {
   double1,
   double2,
