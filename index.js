@@ -10,6 +10,6 @@ const even = (first) => first % 2 === 0;
 const evenBelow = (first) =>  Array.from({ length: Math.floor(first / 2) }, (x) =>  (x, i) => 2 * i);
 const evenIn = (...array) => array.filter((number) => number % 2 === 0);
 const multiplyArray = (...array) => array.reduce((accumulator, currentValue) => accumulator * currentValue, 1);
-const divideArray = array => Array.isArray(array) && array.slice(1).includes(0) ? "Cannot divide by zero" : array.reduce((acc, val) => acc / val);
+const divideArray = array => Array.isArray(array) ? (array.slice(1).includes(0) ? "Cannot divide by zero" : array.reduce((acc, val) => acc / val)) : "Input is not an array";
 
 module.exports = {  double1,  double2,  double3,  repeat,  batman,  max,  maxDivide,  maxStr,  even, evenBelow,  evenIn,  multiplyArray,  divideArray,};
